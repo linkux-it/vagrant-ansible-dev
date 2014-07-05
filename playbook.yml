@@ -1,0 +1,26 @@
+---
+- hosts: all
+  user: $user
+  sudo: yes
+
+  vars_files:
+    - arangodb/defaults/main.yml
+    - postgresql/defaults/main.yml
+    - mysql/defaults/main.yml
+    - mysql/vars/Debian.yml
+    - mysql/vars/main.yml
+    - redis/defaults/main.yml
+    - redis/vars/main.yml
+    - mongodb/defaults/main.yml
+  tasks:
+    - include: arangodb/tasks/vagrant.yml
+    - include: arangodb/tasks/main.yml
+    - include: postgresql/tasks/main.yml
+    - include: mysql/tasks/main.yml
+    - include: redis/tasks/main.yml
+    - include: mongodb/tasks/main.yml
+  handlers:
+    - include: postgresql/handlers/main.yml
+    - include: mysql/handlers/main.yml
+    - include: redis/handlers/main.yml
+    - include: mongodb/handlers/main.yml

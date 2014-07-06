@@ -8,7 +8,7 @@ apps installed:
 - postgressql
 - arangodb
 - memcached
-- celery
+- rabbitmq
 - redis
 - elasticsearch
 - mysql

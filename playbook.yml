@@ -12,6 +12,10 @@
     - redis/defaults/main.yml
     - redis/vars/main.yml
     - mongodb/defaults/main.yml
+    - elasticsearch/defaults/main.yml
+    - elasticsearch/vars/main.yml
+    - memcached/defaults/main.yml
+    - rabbitmq/defaults/main.yml
   tasks:
     - include: arangodb/tasks/vagrant.yml
     - include: arangodb/tasks/main.yml
@@ -19,8 +23,14 @@
     - include: mysql/tasks/main.yml
     - include: redis/tasks/main.yml
     - include: mongodb/tasks/main.yml
+    - include: memcached/tasks/main.yml
+    - include: rabbitmq/tasks/main.yml
+    - include: elasticsearch/tasks/main.yml
   handlers:
     - include: postgresql/handlers/main.yml
     - include: mysql/handlers/main.yml
     - include: redis/handlers/main.yml
     - include: mongodb/handlers/main.yml
+    - include: elasticsearch/handlers/main.yml
+    - include: memcached/handlers/main.yml
+    - include: rabbitmq/handlers/main.yml

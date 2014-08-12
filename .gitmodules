@@ -1,0 +1,28 @@
+[submodule "arangodb"]
+	path = arangodb
+	url = ./arangodb
+	ignore = dirty
+[submodule "mysql"]
+	path = mysql
+	url = ./mysql
+	ignore = dirty
+[submodule "postgresql"]
+	path = postgresql
+	url = ./postgresql
+	ignore = dirty
+[submodule "redis"]
+	path = redis
+	url = ./redis
+	ignore = dirty
+[submodule "elasticsearch"]
+	path = elasticsearch
+	url = ./elasticsearch
+	ignore = dirty
+[submodule "mongodb"]
+	path = mongodb
+	url = ./mongodb
+	ignore = dirty
+[submodule "rabbitmq"]
+	path = rabbitmq
+	url = ./rabbitmq
+	ignore = dirty

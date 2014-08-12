@@ -1,28 +1,32 @@
 [submodule "arangodb"]
 	path = arangodb
-	url = ./arangodb
+	url = git@github.com:linkux-it/ansible-arangodb.git
 	ignore = dirty
 [submodule "mysql"]
 	path = mysql
-	url = ./mysql
+	url = git@github.com:linkux-it/mysql.git
 	ignore = dirty
 [submodule "postgresql"]
 	path = postgresql
-	url = ./postgresql
+	url = git@github.com:linkux-it/postgresql.git
 	ignore = dirty
 [submodule "redis"]
 	path = redis
-	url = ./redis
+	url = git@github.com:linkux-it/ansible-redis.git
 	ignore = dirty
 [submodule "elasticsearch"]
 	path = elasticsearch
-	url = ./elasticsearch
+	url = git@github.com:linkux-it/ansible-elasticsearch.git 
 	ignore = dirty
 [submodule "mongodb"]
 	path = mongodb
-	url = ./mongodb
+	url = git@github.com:linkux-it/Stouts.mongodb.git
 	ignore = dirty
 [submodule "rabbitmq"]
 	path = rabbitmq
-	url = ./rabbitmq
+	url = git@github.com:linkux-it/ansible-playbook-rabbitmq.git 
+	ignore = dirty
+[submodule "memcached"]
+	path = memcached
+	url = git@github.com:linkux-it/ansible-memcached.git
 	ignore = dirty
